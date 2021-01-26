@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.canvas.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane fx:id="rootPane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#Key_movement" onMouseClicked="#Mouse_movement" onMouseReleased="#Mouse_movement" prefHeight="655.0" prefWidth="911.0" styleClass="background_spill" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.SpillController">
+   <children>
+       
+       <VBox fx:id="box" prefHeight="400.0" prefWidth="200.0" styleClass="vbox_score" stylesheets="@Style.css" translateX="690.0" translateY="100.0">
+          
+       </VBox> 
+      <AnchorPane fx:id="board" layoutY="-1.0" prefHeight="655.0" prefWidth="911.0" />
+      <AnchorPane fx:id="objects" focusTraversable="true" layoutY="-1.0" prefHeight="655.0" prefWidth="911.0" />
+      <AnchorPane fx:id="pausePane" prefHeight="655.0" prefWidth="911.0">
+         <children>
+             <VBox fx:id="gameOver" layoutX="288.0" layoutY="170.0" prefHeight="250.0" prefWidth="300.0" styleClass="vbox" >
+         <children>
+            <Label prefHeight="59.0" prefWidth="238.0" text="GAME OVER" translateX="40.0" translateY="10.0">
+               <font>
+                  <Font size="42.0" />
+               </font>
+            </Label>
+            <Button fx:id="retry" mnemonicParsing="false" styleClass="buttons" onAction="#RETRY" prefHeight="49.0" prefWidth="127.0" text="RETRY" translateX="90.0" translateY="70.0" />
+            <Button fx:id="" layoutX="10.0" layoutY="59.0" styleClass="buttons" onAction="#MENU" mnemonicParsing="false" prefHeight="49.0" prefWidth="127.0" text="MAIN MENU" translateX="90.0" translateY="80.0" />
+         </children>
+      </VBox>
+            <VBox fx:id="pauseBox" layoutX="-6.0" layoutY="-5.0" prefHeight="300.0" prefWidth="400.0" styleClass="vbox" stylesheets="@Style.css" translateX="270.0" translateY="150.0">
+               <children>
+                  <Button fx:id="resume" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" styleClass="buttons" stylesheets="@Style.css" text="RESUME" translateX="140.0" translateY="20.0" />
+                  <Button fx:id="restart" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" styleClass="buttons" stylesheets="@Style.css" text="RESTART" translateX="140.0" translateY="30.0" />
+                  <Button fx:id="save" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" onAction="#save" prefHeight="46.0" prefWidth="122.0" styleClass="buttons" stylesheets="@Style.css" text="SAVE" translateX="140.0" translateY="40.0" />
+                  <Button fx:id="load" layoutX="10.0" layoutY="56.0" mnemonicParsing="false" onAction="#load" prefHeight="46.0" prefWidth="122.0" styleClass="buttons" stylesheets="@Style.css" text="LOAD" translateX="140.0" translateY="50.0" />
+                  <Button fx:id="exit" layoutX="10.0" layoutY="102.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="122.0" styleClass="buttons" stylesheets="@Style.css" text="EXIT" translateX="140.0" translateY="60.0" />
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

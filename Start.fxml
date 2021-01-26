@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.*?>
+
+<BorderPane id="rootPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="911.0" styleClass="start" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.StartController">
+    <children>
+        <ImageView fitHeight="300.0" fitWidth="300.0" translateX="300.0" translateY="30.0">
+               <image>
+                  <Image url="/View/logo.png" />
+               </image>
+            </ImageView>
+    </children>
+   <bottom>
+      <Button mnemonicParsing="false" styleClass="buttons" text="START" prefHeight="61.0" prefWidth="182.0" translateY="-50.0" BorderPane.alignment="CENTER" onAction="#loadStart" />
+   </bottom>
+</BorderPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.image.* ?>
+
+<AnchorPane id="rootPane" fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="655.0" prefWidth="911.0" styleClass="menu" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.MenuController">
+    <children>
+        <ImageView fitHeight="250.0" fitWidth="250.0" translateX="580.0" translateY="10.0">
+               <image>
+                  <Image url="/View/logo.png" />
+               </image>
+            </ImageView> 
+    </children>
+    <children>
+      
+      <VBox layoutX="560.0" layoutY="250.0" prefHeight="417.0" prefWidth="286.0" stylesheets="@Style.css">
+         <children>
+            <Button mnemonicParsing="false" onAction="#NewGame" prefHeight="61.0" prefWidth="182.0" styleClass="buttons" stylesheets="@Style.css" text="NEW GAME" translateX="50.0" translateY="30.0" />
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#load" prefHeight="61.0" prefWidth="182.0" styleClass="buttons" stylesheets="@Style.css" text="LOAD" translateX="50.0" translateY="40.0" />
+            <Button layoutX="10.0" layoutY="71.0" mnemonicParsing="false" onAction="#loadOptions" prefHeight="61.0" prefWidth="182.0" styleClass="buttons" stylesheets="@Style.css" text="HOW TO PLAY" translateX="50.0" translateY="50.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

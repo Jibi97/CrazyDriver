@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="655.0" prefWidth="911.0" styleClass="menu" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.OptionsController">
+   <children>
+      <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#goBack" styleClass="buttons" text="BACK" />
+      <VBox layoutX="473.0" layoutY="60.0" prefHeight="581.0" prefWidth="424.0" styleClass="vbox">
+         <children>
+            <Label prefHeight="80.0" prefWidth="346.0" text="PRESS LEFT AND RIGHT TO STEER" textFill="#f2ecec" translateX="70.0">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="78.0" fitWidth="88.0" translateX="40.0" translateY="10.0">
+               <image>
+                  <Image url="/View/leftClick.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="10.0" layoutY="10.0" translateX="300.0" translateY="-65.0">
+               <image>
+                  <Image url="/View/rightClick.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="10.0" layoutY="10.0" translateX="170.0" translateY="-145.0">
+               <image>
+                  <Image url="/View/Black_viper.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="10.0" layoutY="246.0" translateX="170.0" translateY="-100.0">
+               <image>
+                  <Image url="/View/keys.png" />
+               </image>
+            </ImageView>
+            <Label prefHeight="40.0" prefWidth="87.0" text="PAUSE" textFill="#f5f0f0" translateX="200.0">
+               <font>
+                  <Font name="Arial Black" size="20.0" />
+               </font></Label>
+            <ImageView fitHeight="78.0" fitWidth="88.0" layoutX="10.0" layoutY="324.0" translateX="80.0" translateY="-50.0">
+               <image>
+                  <Image url="/View/esc.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+      <VBox layoutX="14.0" layoutY="60.0" prefHeight="581.0" prefWidth="424.0" styleClass="vbox">
+         <children>
+            <Text fill="#e8e1e1" strokeType="OUTSIDE" strokeWidth="0.0" text="Have you ever wanted to see what it feels like to recklessly drive a Car at breakneck speeds? Crazy Driver allows you to do this with a range of other cars to choose! All you need to do is to avoid these cars on your way:   " translateX="5.0" translateY="10.0" wrappingWidth="437.3359375">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="104.0" fitWidth="108.0" translateY="20.0">
+               <image>
+                  <Image url="/View/Mini_truck.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="104.0" fitWidth="108.0" layoutX="10.0" layoutY="123.0" translateX="130.0" translateY="-80.0">
+               <image>
+                  <Image url="/View/taxi.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="104.0" fitWidth="108.0" layoutX="10.0" layoutY="123.0" translateX="260.0" translateY="-185.0">
+               <image>
+                  <Image url="/View/truck.png" />
+               </image>
+            </ImageView>
+            <Text fill="#f8f6f6" strokeType="OUTSIDE" strokeWidth="0.0" text="Coins give you extra points" translateX="100.0" translateY="-160.0" wrappingWidth="167.205078125">
+               <font>
+                  <Font name="Arial Black" size="16.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="104.0" fitWidth="108.0" layoutX="10.0" layoutY="130.0" translateX="150.0" translateY="-150.0">
+               <image>
+                  <Image url="/View/coin.png" />
+               </image>
+            </ImageView>
+         </children></VBox>
+   </children>
+</AnchorPane>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="655.0" prefWidth="911.0" styleClass="menu" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.WelcomeController">
+   <children>
+      <VBox fx:id="chooseBox" layoutY="63.0" prefHeight="367.0" prefWidth="294.0" styleClass="vbox" stylesheets="@Style.css">
+         <children>
+             <Button fx:id="viper" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css">
+                 <graphic>
+                       <ImageView fitHeight="60.0" fitWidth="55.0">
+                           <image>
+                               <Image url="/View/Black_viper.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+             </Button>
+            <Button fx:id="audi" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css">
+                <graphic>
+                       <ImageView fitHeight="60.0" fitWidth="55.0">
+                           <image>
+                               <Image url="/View/Audi.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+            </Button>
+            <Button fx:id="orange" layoutX="10.0" layoutY="94.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css">
+                <graphic>
+                       <ImageView fitHeight="60.0" fitWidth="55.0">
+                           <image>
+                               <Image url="/View/Car.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+            </Button>
+            <Button fx:id="police" layoutX="10.0" layoutY="178.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css">
+                <graphic>
+                       <ImageView fitHeight="60.0" fitWidth="55.0">
+                           <image>
+                               <Image url="/View/Police.png" />
+                           </image>
+                       </ImageView>
+                   </graphic>
+            </Button>
+            <Button fx:id="ambulance" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css" translateX="140.0" translateY="-320.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="55.0">
+                     <image>
+                        <Image url="/View/Ambulance.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="mini_van" layoutX="10.0" layoutY="330.0" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" styleClass="buttons" stylesheets="@Style.css" translateX="140.0" translateY="-320.0">
+               <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="55.0">
+                     <image>
+                        <Image url="/View/Mini_van.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children></VBox>
+      <Label layoutX="8.0" text="CHOOSE YOUR AVATAR" textFill="#f5f2f2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="435.0" text="CHOOSE YOUR BOARD" textFill="#f5f2f2">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <VBox layoutX="406.0" layoutY="57.0" prefHeight="480.0" prefWidth="424.0" styleClass="vbox" stylesheets="@Style.css">
+         <children>
+             <Button fx:id="track1" mnemonicParsing="false" styleClass="buttons" stylesheets="@Style.css" prefHeight="84.0" prefWidth="142.0"  >
+                  <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="55.0">
+                     <image>
+                        <Image url="/View/Bane.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+             </Button>
+             <Button fx:id="track2" layoutX="10.0" layoutY="10.0" styleClass="buttons" stylesheets="@Style.css" mnemonicParsing="false" prefHeight="84.0" prefWidth="142.0" >
+                  <graphic>
+                  <ImageView fitHeight="60.0" fitWidth="55.0">
+                     <image>
+                        <Image url="/View/2.jpg" />
+                     </image>
+                  </ImageView>
+               </graphic>
+             </Button>
+         </children></VBox>
+      <Button fx:id="start" layoutX="372.0" layoutY="564.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="102.0" styleClass="buttons" stylesheets="@Style.css" text="START" />
+   </children>
+</AnchorPane>
